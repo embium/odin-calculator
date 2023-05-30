@@ -13,7 +13,6 @@ for(const button of buttons){
                 current.textContent = calculate(
                     current.textContent + previous.textContent);
                 previous.textContent = previous.textContent + current.textContent;
-                current.textContent = "";
                 break;
             default:
                 current.textContent += event.target.textContent;

@@ -22,7 +22,7 @@ body {
 .result {
     background-color: black;
     color: white;
-    width: 100%;
+    width: 80%;
     height: 100px;
     border-radius: 5px;
     margin-bottom: 10px;
@@ -61,7 +61,11 @@ body {
 }
 
 .button.clear {
+    display: flex;
     background-color: red;
+    width: 20%;
+    margin-bottom: 10px;
+    align-items: center;
 }
 
 .button.operator {
