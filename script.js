@@ -10,16 +10,19 @@ for(const button of buttons){
                 current.textContent = "";
                 previous.textContent = "";
                 break;
-            case "x":
-                previous.textContent = current.textContent + "*";
-                current.textContent = "";
-                break;
             case "=":
-                current.textContent = runCalculations(current.textContent);
+                current.textContent = calculate(current.textContent + previous.textContent);
+                previous.textContent = current.textContent;
+                current.textContent = "";
                 break;
             default:
                 current.textContent += event.target.textContent;
                 break;
         }
     });
+}
+
+function calculate(input) {
+    input = input.replace('×', '*')
+    return new Function('return ' + input)();
 }
