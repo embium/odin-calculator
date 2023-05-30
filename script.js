@@ -1,4 +1,3 @@
-const body = document.body;
 const previous = document.querySelector(".result .previous")
 const current = document.querySelector(".result .current")
 const buttons = document.querySelectorAll("button");
@@ -11,8 +10,9 @@ for(const button of buttons){
                 previous.textContent = "";
                 break;
             case "=":
-                current.textContent = calculate(current.textContent + previous.textContent);
-                previous.textContent = current.textContent;
+                current.textContent = calculate(
+                    current.textContent + previous.textContent);
+                previous.textContent = previous.textContent + current.textContent;
                 current.textContent = "";
                 break;
             default:
