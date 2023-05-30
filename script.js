@@ -23,6 +23,7 @@ for(const button of buttons){
 }
 
 function calculate(input) {
-    input = input.replace('×', '*')
+    input = input.replace("×", "*")
+    input = input.replace("÷", "/")
     return new Function('return ' + input)();
 }
