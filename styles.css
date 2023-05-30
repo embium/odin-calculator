@@ -22,7 +22,7 @@ body {
 .result {
     background-color: black;
     color: white;
-    width: 80%;
+    width: 75%;
     height: 100px;
     border-radius: 5px;
     margin-bottom: 10px;
@@ -64,8 +64,10 @@ body {
     display: flex;
     background-color: red;
     width: 20%;
+    margin-left: 10px;
     margin-bottom: 10px;
     align-items: center;
+    justify-content: center;
 }
 
 .button.operator {
