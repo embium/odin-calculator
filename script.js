@@ -10,9 +10,10 @@ for(const button of buttons){
                 previous.textContent = "";
                 break;
             case "=":
-                current.textContent = calculate(
+                let calculation = calculate(
                     current.textContent + previous.textContent);
-                previous.textContent = previous.textContent + current.textContent;
+                previous.textContent = calculation;
+                current.textContent = "";
                 break;
             default:
                 current.textContent += event.target.textContent;
