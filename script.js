@@ -44,7 +44,13 @@ document.body.onkeydown = (e) => {
     if(e.key === "Backspace") {
         current.textContent = current.textContent.slice(0, -1)
     }else{
-        if(current.textContent.length < 10) current.textContent += e.key;
+        validKeys = [
+            "0", "1", "2", "3", "4",
+            "5", "6", "7", "8", "9"
+        ]
+        if(e.key in validKeys) {
+            if(current.textContent.length < 10) current.textContent += e.key;
+        }
     }
 }
 
