@@ -49,8 +49,8 @@ document.body.onkeydown = (e) => {
         equal.click();
     }else{
         validKeys = [
-            "0", "1", "2", "3", "4",
-            "5", "6", "7", "8", "9"
+            "0", "1", "2", "3", "4"
+            , "5", "6", "7", "8", "9"
             , "."
         ]
         if(e.key in validKeys) {
